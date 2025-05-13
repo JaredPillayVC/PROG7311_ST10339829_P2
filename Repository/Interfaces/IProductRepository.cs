@@ -13,7 +13,10 @@ namespace PROG7311_ST10339829_P2.Repository.Interfaces
     public interface IProductRepository
     {
         Task<IEnumerable<Product>> GetProductsByFarmerAsync(int farmerId);
-        Task<IEnumerable<Product>> GetAllProductsAsync(string category, DateTime? fromDate, DateTime? toDate);
+        Task<IEnumerable<ProductWithFarmer>> GetAllProductsAsync(
+            int? farmerId, string? category, DateTime? fromDate, DateTime? toDate);
+        Task<IEnumerable<string>> GetAllCategoriesAsync();
+
         Task AddProductAsync(Product product);
     }
 }

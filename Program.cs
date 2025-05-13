@@ -7,62 +7,50 @@ using PROG7311_ST10339829_P2.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
-{
-    options.Password.RequiredLength = 8;
-    options.Password.RequireDigit = true;
-    options.User.RequireUniqueEmail = true;
-})
+AppContext.SetSwitch("System.Diagnostics.PerformanceCounter.UseNetCore", false);
+
+
+builder.Services.AddDbContext<ApplicationDbContext>(opts =>
+    opts.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+builder.Services
+    .AddDefaultIdentity<ApplicationUser>(options =>
+    {
+        options.SignIn.RequireConfirmedAccount = true;
+        options.Password.RequiredLength = 8;
+        options.Password.RequireDigit = true;
+        options.User.RequireUniqueEmail = true;
+    })
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddDefaultUI()
-    .AddDefaultTokenProviders();
+    .AddDefaultTokenProviders()
+    .AddDefaultUI();
+
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<DapperContext>();
-
 builder.Services.AddScoped<IFarmerRepository, FarmerRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
-
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-
-// Add services to the container.
-
 
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
+    "default",
+    "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-   
-    PROG7311_ST10339829_P2.Data.SeedData
-        .InitializeAsync(services)
-        .GetAwaiter()
-        .GetResult();
-}
+using var scope = app.Services.CreateScope();
+await SeedData.InitializeAsync(scope.ServiceProvider);
+
 app.Run();
