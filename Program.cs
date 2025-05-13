@@ -2,6 +2,8 @@ using PROG7311_ST10339829_P2.Models;
 using PROG7311_ST10339829_P2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using PROG7311_ST10339829_P2.Repository.Interfaces;
+using PROG7311_ST10339829_P2.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,11 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<DapperContext>();
+
+builder.Services.AddScoped<IFarmerRepository, FarmerRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
 
 var app = builder.Build();
 

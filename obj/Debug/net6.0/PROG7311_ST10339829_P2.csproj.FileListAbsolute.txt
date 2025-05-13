@@ -6,11 +6,13 @@ C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\PROG73
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\PROG7311_ST10339829_P2.runtimeconfig.json
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\PROG7311_ST10339829_P2.dll
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\PROG7311_ST10339829_P2.pdb
+C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\Dapper.dll
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\Humanizer.dll
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\JaredPillay\source\repos\PROG7311_ST10339829_P2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
