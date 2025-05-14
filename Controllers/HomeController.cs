@@ -1,32 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using PROG7311_ST10339829_P2.Models;
-using System.Diagnostics;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace PROG7311_ST10339829_P2.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
-            return View();
-        }
+            if (User.IsInRole("Farmer"))
+                return RedirectToAction("MyProducts", "Farmer");
 
-        public IActionResult Privacy()
-        {
+            if (User.IsInRole("Employee"))
+                return RedirectToAction("ViewProducts", "Employee");
+            
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

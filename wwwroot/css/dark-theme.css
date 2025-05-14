@@ -1,0 +1,152 @@
+﻿body {
+    background-color: #111; 
+    color: #f5f5f5; 
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link,
+.footer {
+    color: #f5f5f5 !important;
+}
+
+
+a, .nav-link {
+    color: #bbcdf0; 
+}
+
+    a:hover, .nav-link:hover {
+        color: #80aaff;
+    }
+
+
+.table {
+    color: #f5f5f5;
+    border-color: #444;
+}
+
+    .table th, .table td {
+        border-bottom: 1px solid #333;
+    }
+
+    .table thead th {
+        color: #e0e0e0;
+        border-bottom: 2px solid #555;
+    }
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #1a1a1a;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #222;
+}
+
+
+.form-control,
+.form-select {
+    background-color: #1e1e1e;
+    color: #eee;
+    border: 1px solid #444;
+}
+
+    .form-control::placeholder {
+        color: #999;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        background-color: #252525;
+        border-color: #80aaff;
+        color: #fff;
+        box-shadow: none;
+    }
+
+
+.btn-primary {
+    background-color: #3366cc;
+    border-color: #3366cc;
+}
+
+    .btn-primary:hover {
+        background-color: #2851a3;
+        border-color: #2851a3;
+    }
+
+.btn-success {
+    background-color: #22863a;
+    border-color: #22863a;
+}
+
+    .btn-success:hover {
+        background-color: #196c2f;
+        border-color: #196c2f;
+    }
+
+
+.alert {
+    border-radius: 0.25rem;
+    color: #f5f5f5;
+}
+
+.alert-danger {
+    background-color: #8b1c1c;
+    border-color: #640d0d;
+}
+
+.alert-success {
+    background-color: #1e4620;
+    border-color: #133214;
+}
+
+
+label, legend {
+    color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fdfdfd;
+}
+
+
+.card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    color: #f5f5f5;
+}
+
+
+.footer {
+    background-color: #121212;
+}
+
+    .footer a {
+        color: #bbcdf0;
+    }
+
+        .footer a:hover {
+            color: #80aaff;
+        }
+
+
+.table-dark thead th {
+    background-color: #2b2b2b;
+    color: #f5f5f5;
+    border-bottom: 2px solid #444;
+}
+
+
+.table-dark.table-striped tbody tr:nth-of-type(even) {
+    background-color: #232323;
+}
+
+
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #1e1e1e;
+}
+
+
+.table-hover tbody tr:hover {
+    background-color: #333333;
+}

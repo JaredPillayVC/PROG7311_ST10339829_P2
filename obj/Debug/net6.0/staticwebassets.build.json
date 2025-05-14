@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sZuY5v0zEWyEWhe4bujD1lydnno7noP0QJkU0ipeoi8=",
+  "Hash": "/Q2+EQp7Fxyp+iOkjxnACXW7fmsaJbe64OUxdBIiQRw=",
   "Source": "PROG7311_ST10339829_P2",
   "BasePath": "_content/PROG7311_ST10339829_P2",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PROG7311_ST10339829_P2.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\css\\dark-theme.css",
+      "SourceId": "PROG7311_ST10339829_P2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\",
+      "BasePath": "_content/PROG7311_ST10339829_P2",
+      "RelativePath": "css/dark-theme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dark-theme.css"
+    },
+    {
       "Identity": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\css\\site.css",
       "SourceId": "PROG7311_ST10339829_P2",
       "SourceType": "Discovered",
@@ -1103,6 +1120,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\favicon-32x32.png",
+      "SourceId": "PROG7311_ST10339829_P2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\",
+      "BasePath": "_content/PROG7311_ST10339829_P2",
+      "RelativePath": "favicon-32x32.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon-32x32.png"
+    },
+    {
+      "Identity": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\Images\\logo.png",
+      "SourceId": "PROG7311_ST10339829_P2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\",
+      "BasePath": "_content/PROG7311_ST10339829_P2",
+      "RelativePath": "Images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\logo.png"
     },
     {
       "Identity": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\js\\site.js",

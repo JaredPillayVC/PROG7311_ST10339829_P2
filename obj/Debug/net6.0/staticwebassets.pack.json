@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\PROG7311_ST10339829_P2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\css\\dark-theme.css",
+      "PackagePath": "staticwebassets\\css\\dark-theme.css"
+    },
+    {
       "Id": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon-32x32.png"
     },
     {
       "Id": "C:\\Users\\JaredPillay\\source\\repos\\PROG7311_ST10339829_P2\\wwwroot\\favicon.ico",
