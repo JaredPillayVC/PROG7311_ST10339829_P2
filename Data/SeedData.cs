@@ -8,8 +8,15 @@ using PROG7311_ST10339829_P2.Models;
 
 namespace PROG7311_ST10339829_P2.Data
 {
+    /// <summary>
+    /// Provides methods to seed initial data for the application.
+    /// </summary>
     public static class SeedData
     {
+        /// <summary>
+        /// Seeds roles, users, and initial farmer/employee data.
+        /// </summary>
+        /// <param name="services">The service provider for dependency injection.</param>
         public static async Task InitializeAsync(IServiceProvider services)
         {
             var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
@@ -19,10 +26,12 @@ namespace PROG7311_ST10339829_P2.Data
             string[] roles = { "Farmer", "Employee" };
             foreach (var role in roles)
             {
+                // Create role if it does not exist
                 if (!await roleManager.RoleExistsAsync(role))
                     await roleManager.CreateAsync(new IdentityRole(role));
             }
 
+            // Seed a farmer user
             const string farmerEmail = "farmer@agri.com";
             var farmerUser = await userManager.FindByEmailAsync(farmerEmail);
             if (farmerUser == null)
@@ -55,6 +64,7 @@ SELECT CAST(SCOPE_IDENTITY() AS INT);";
                 await userManager.UpdateAsync(farmerUser);
             }
 
+            // Seed an employee user
             const string employeeEmail = "employee@agri.com";
             var employeeUser = await userManager.FindByEmailAsync(employeeEmail);
             if (employeeUser == null)
