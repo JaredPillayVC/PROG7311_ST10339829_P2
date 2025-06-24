@@ -7,12 +7,18 @@ using System.Threading.Tasks;
 
 namespace PROG7311_ST10339829_P2.Controllers
 {
+    /// <summary>
+    /// Controller for farmer-specific actions and views.
+    /// </summary>
     [Authorize(Roles = "Farmer")]
     public class FarmerController : Controller
     {
         private readonly IProductRepository _productRepo;
         private readonly UserManager<ApplicationUser> _userManager;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FarmerController"/> class.
+        /// </summary>
         public FarmerController(
             IProductRepository productRepo,
             UserManager<ApplicationUser> userManager)
@@ -21,7 +27,9 @@ namespace PROG7311_ST10339829_P2.Controllers
             _userManager = userManager;
         }
 
-
+        /// <summary>
+        /// Displays the list of products for the current farmer.
+        /// </summary>
         public async Task<IActionResult> MyProducts()
         {
             var user = await _userManager.GetUserAsync(User);
@@ -30,10 +38,14 @@ namespace PROG7311_ST10339829_P2.Controllers
             return View(products);
         }
 
-        
+        /// <summary>
+        /// Shows the Add Product form.
+        /// </summary>
         public IActionResult AddProduct() => View();
 
-       
+        /// <summary>
+        /// Handles the Add Product form submission.
+        /// </summary>
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> AddProduct(Product model)
         {
@@ -50,6 +62,7 @@ namespace PROG7311_ST10339829_P2.Controllers
             }
             catch (Exception ex)
             {
+                // Log exception (ex) as needed
                 ModelState.AddModelError("", "An error occurred saving your product.");
                 return View(model);
             }

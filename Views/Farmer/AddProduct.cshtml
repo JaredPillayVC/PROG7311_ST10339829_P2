@@ -1,5 +1,6 @@
 ﻿@model PROG7311_ST10339829_P2.Models.Product
 @{
+    // View for adding a new product for the current farmer
     ViewData["Title"] = "Add Product";
 }
 
@@ -33,6 +34,7 @@
 
 @section Scripts {
     @{
+        // Render validation scripts partial for client-side validation
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }

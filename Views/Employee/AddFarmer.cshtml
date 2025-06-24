@@ -1,5 +1,6 @@
 ﻿@model PROG7311_ST10339829_P2.Models.Farmer
 @{
+    // View for adding a new farmer (employee only)
     ViewData["Title"] = "Add New Farmer";
 }
 
@@ -32,6 +33,7 @@
 
 @section Scripts {
     @{
+        // Render validation scripts partial for client-side validation
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }

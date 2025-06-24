@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<PROG7311_ST10339829_P2.Models.Product>
 @{
+    // View for displaying the current farmer's products
     ViewData["Title"] = "My Products";
 }
 
@@ -13,6 +14,7 @@
         </tr>
     </thead>
     <tbody>
+        @* Loop through each product and display its details *@
         @foreach (var p in Model)
         {
             <tr>
