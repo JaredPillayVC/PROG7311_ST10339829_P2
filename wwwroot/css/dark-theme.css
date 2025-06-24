@@ -63,6 +63,22 @@ a, .nav-link {
         box-shadow: none;
     }
 
+/* Ensure readable text in white/light input fields (e.g., ASP.NET Identity Manage Account) */
+input.form-control, textarea.form-control, select.form-select {
+    color: #212529 !important; /* dark text for readability */
+    background-color: #fff !important;
+}
+
+input.form-control::placeholder, textarea.form-control::placeholder {
+    color: #212529 !important; /* force dark placeholder for readability */
+    opacity: 1 !important;
+}
+
+input.form-control:disabled, input.form-control[readonly] {
+    color: #6c757d !important; /* muted text for disabled/readonly */
+    background-color: #e9ecef !important;
+}
+
 
 .btn-primary {
     background-color: #3366cc;
