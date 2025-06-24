@@ -1,0 +1,35 @@
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[xX]64/
+[xX]86/
+bin/
+obj/
+
+# Visual Studio cache files
+.vs/
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Others
+*.log
+*.tlog
+*.vsidx
+
+# Ignore all FileContentIndex files
+.vs/PROG7311_ST10339829_P2/FileContentIndex/
+
+# Ignore RazorAssemblyInfo auto-generated files
+obj/**/*.RazorAssemblyInfo.cs
