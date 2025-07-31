@@ -33,3 +33,19 @@ obj/
 
 # Ignore RazorAssemblyInfo auto-generated files
 obj/**/*.RazorAssemblyInfo.cs
+
+# Configuration files
+appsettings.Development.json
+
+# Generated files
+*.nuget.g.props
+*.nuget.g.targets
+*.dgspec.json
+project.nuget.cache
+
+# Debug/Release outputs
+bin/Debug/
+bin/Release/
+
+# Cache files
+*.dtbcache.v2
